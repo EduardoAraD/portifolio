@@ -1,4 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  experimental: {
+    forceSwcTransforms: true,
+  },
+  images: {
+    domains:['github.com'],
+  },
+}
 
 module.exports = nextConfig

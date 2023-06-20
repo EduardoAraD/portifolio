@@ -1,0 +1,30 @@
+.footer {
+  height: 2.5rem;
+  display: flex;
+  max-width: 1140px;
+  width: 100%;
+
+  align-items: center;
+  justify-content: space-around;
+  border-top: 1px solid var(--gray-600);
+  
+  p {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--gray-100);
+  }
+  div {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+    svg {
+      color: var(--white);
+      transition: color 0.2s;
+
+      &:hover {
+        color: var(--blue-500);
+      }
+    }
+  }
+}
