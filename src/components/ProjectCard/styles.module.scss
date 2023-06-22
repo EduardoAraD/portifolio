@@ -1,0 +1,46 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--gray-720);
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 1.2rem;
+  margin-bottom: 1rem;
+
+  div.title {
+    background-color: var(--gray-720);
+    border: 1px solid var(--gray-800);
+
+    display: flex;
+    margin-top: -2.75rem;
+    height: 2.5rem;
+    border-radius: 99px;
+    padding: 1rem;
+    min-width: auto;
+    align-items: center;
+    gap: 0.75rem;
+    width: fit-content;
+    
+    p {
+      line-height: 1.8rem;
+      font-size: 1.125rem;
+      font-weight: 500;
+      margin-right: 1rem;
+    }
+
+    a {
+      color: var(--white);
+      transition: 0.2s;
+      &:hover {
+        color: var(--blue-500);
+      }
+    }
+  }
+
+  span {
+    line-height: 1.5rem;
+    font-size: 1rem;
+    color: var(--gray-100);
+  }
+
+}

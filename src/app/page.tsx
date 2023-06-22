@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from './styles.module.scss';
 import { FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
 import { FaReact } from 'react-icons/fa';
+import { ProjectCard } from "@/components/ProjectCard";
 
 export default function Home() {
   return (
@@ -48,16 +49,13 @@ export default function Home() {
             em projetos com grande quantidade de usuários.
           </span>
         </div>
-        <div className={styles.card}>
-          <div>
-            React Native <FaReact size={20} />
-          </div>
-          <span>
-            Apesar de trabalhar com web e mobile, eu prefiro o mobile por conta
-            da quantidade de opções que a gente pode fazer o celular,
-            é divertido fazer meu proprio celular como cobaia para testes.
-          </span>
-        </div>
+        <ProjectCard
+          name="React Native"
+          content="Apesar de trabalhar com web e mobile, eu prefiro o mobile por conta
+          da quantidade de opções que a gente pode fazer o celular,
+          é divertido fazer meu proprio celular como cobaia para testes."
+          links={[{ icon: "default", link: '1' }]}
+        />
       </div>
     </div>
   )
