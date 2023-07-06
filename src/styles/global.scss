@@ -10,6 +10,7 @@
   --gray-100: #E1E1E6;
   --gray-300: #a8a8a8;
   --gray-600: #4D4D51;
+  --gray-650: #3F4152;
   --gray-700: #37373F;
   --gray-720: #333443;
   --gray-800: #1d1d20;
@@ -17,6 +18,10 @@
   --green-500: #80FFA3;
   --blue-500: #62D9FF;
   --blue-800: #4CA9FF;
+}
+
+:focus {
+  outline: var(--blue-800);
 }
 
 @media (max-width: 1080px) {

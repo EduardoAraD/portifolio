@@ -1,30 +1,22 @@
 import Image from "next/image";
-import styles from './styles.module.scss';
 import { FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
-import { FaReact } from 'react-icons/fa';
-import { ProjectCard } from "@/components/ProjectCard";
+
+import styles from '../styles/screens/home.module.scss';
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <h1>Oi sou Eduardo, e estou buscando ser reconhecido pelo meu trabalho.</h1>
+      <h1>Olá, sou Eduardo, um Desenvolvedor FrontEnd.</h1>
       <div className={styles.biografy}>
-        <div className={styles.border}>
-          <Image
-            src='https://github.com/EduardoAraD.png' 
-            alt="Foto de perfil github"
-            width={150}
-            height={150}
-          />
-        </div>
-        <div className={styles.info}>
-          <p>Biografia</p>
-          <span>
-            Sou de Caucaia, tenho 27 anos, trabalhei por 2 anos no Grupo Servnac
-            e atualmente to estudando e buscando uma nova vaga no mercado.
-          </span>
-        </div>
         <div className={styles.contact}>
+          <div className={styles.border}>
+            <Image
+              src='https://github.com/EduardoAraD.png' 
+              alt="Foto de perfil github"
+              width={150}
+              height={150}
+            />
+          </div>
           <p>Redes Sociais</p>
           <div>
             <a href={"https://github.com/EduardoAraD"} target='_blank'>
@@ -38,8 +30,51 @@ export default function Home() {
             </a>
           </div>
         </div>
+        <div className={styles.info}>
+          <h3>Biografia</h3>
+          <p>
+          Sou de Caucaia, trabalho com entusiasmo para criar soluções criativas e impactantes. Ao longo dos anos, aprimorei
+          meus conhecimentos em <span>Desenvolvimento Front End</span> e desenvolvi um profundo conhecimento no <span>Desenvolvimento
+          Mobile com React Native e Expo</span>. Com um olhar atento aos detalhes e uma abordagem centrada no usuário,
+          procuro criar experiências únicas e cativantes que atendam às necessidades e desejos dos usuários.
+          </p>
+          <p>
+          Meu portfólio reflete minha jornada profissional e minha dedicação em alcançar resultados excepcionais.
+          Ele é composto por projetos desafiadores e diversificados, nos quais tive a oportunidade de colaborar com
+          equipes talentosas e clientes inspiradores.
+          </p>
+          <p>
+          Acredito na importância da comunicação clara e eficaz, tanto com os clientes quanto com os colegas de equipe.
+          Busco entender profundamente as necessidades e objetivos do projeto para oferecer soluções sob medida, sempre
+          buscando superar as expectativas.
+          Estou aberto a novas oportunidades de colaboração e projetos. Se você está em busca de um profissional
+          apaixonado por Tecnologia e comprometido em fornecer resultados excepcionais, adoraria conversar e explorar maneiras
+          de trabalharmos juntos.
+          </p>
+          <p>
+          Vamos construir algo incrível juntos! Entre em contato comigo clicando nos ícones ao lado.
+          </p>
+          <p>
+          Muito obrigado(a) pela visita ao meu portfólio. Estou ansioso(a) para conhecer você e discutir
+          como podemos alcançar grandes conquistas juntos!
+          </p>
+        </div>
+        {/* <div className={styles.contact}>
+          <p>Redes Sociais</p>
+          <div>
+            <a href={"https://github.com/EduardoAraD"} target='_blank'>
+              <FiGithub size={20} />
+            </a>
+            <a href={"https://www.instagram.com/duduh_arad/"} target='_blank'>
+              <FiInstagram size={20} />
+            </a>
+            <a href={"https://www.linkedin.com/in/eduardo-araujo-2a679a176/"} target='_blank'>
+              <FiLinkedin size={20} />
+            </a>
+          </div>
+        </div> */}
       </div>
-
+{/* 
       <div className={styles.resume}>
         <div className={styles.whatDo}>
           <p>O que eu faço?</p>
@@ -56,7 +91,7 @@ export default function Home() {
           é divertido fazer meu proprio celular como cobaia para testes."
           links={[{ icon: "default", link: '1' }]}
         />
-      </div>
+      </div> */}
     </div>
   )
 }

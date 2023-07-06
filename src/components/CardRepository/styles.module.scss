@@ -1,0 +1,72 @@
+.card {
+  height: 12rem;
+  min-width: 26rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.125rem;
+  background-color: var(--gray-650);
+  border-radius: 1.25rem;
+  gap: 0.625rem;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--white);
+  }
+
+  p {
+    flex: 1;
+    font-size: 1.125rem;
+    color: var(--gray-100);
+    line-height: 1.375rem;
+  }
+
+  > div {
+    display: flex;
+    gap: 0.5rem;
+    
+    div {
+      height: 2rem;
+      width: 2rem;
+      border-radius: 0.5rem;
+      background-color: var(--white);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      svg {
+        color: var(--blue-500);
+      }
+    }
+  } 
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: var(--gray-700);
+  color: var(--white);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+
+  font-size: 0.875rem;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

@@ -3,8 +3,9 @@ import Image from 'next/image';
 import { ProjectCard } from '@/components/ProjectCard';
 import { projects } from '@/storage/Projects';
 
-import styles from './styles.module.scss';
+import styles from '../../styles/screens/experience.module.scss';
 import ufcImage from '../../assets/ufc.jpeg';
+import servnacImg from '../../assets/servnac.jpeg';
 
 export default function Experience() {
   return (
@@ -43,7 +44,7 @@ export default function Experience() {
               em sites e aplicativos no <b>AWS, Google Play e Apple Store</b>.
             </p>
           </div>
-          <Image src={ufcImage} alt='UFC Russas' quality={80} />
+          <Image src={servnacImg} alt='Grupo Servnac' />
         </div>
         <div className={styles.projects}>
           <h3>Principais Projetos</h3>
