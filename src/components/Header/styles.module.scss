@@ -35,3 +35,21 @@
     }
   }
 }
+
+@media (max-width: 650px) {
+  .header {
+    display: flex;
+    width: 100%;
+
+    h3 {
+      visibility: hidden;
+      width: 0px;
+    }
+
+    div {
+      flex: 1;
+      justify-content: space-between;
+      gap: 0px;
+    }
+  }
+}

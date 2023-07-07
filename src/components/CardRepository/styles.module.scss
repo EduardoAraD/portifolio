@@ -1,6 +1,6 @@
 .card {
   height: 12rem;
-  min-width: 26rem;
+  min-width: 18.75rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -9,10 +9,28 @@
   border-radius: 1.25rem;
   gap: 0.625rem;
 
+  .floating {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+  }
+
   h2 {
     font-size: 2rem;
     font-weight: bold;
     color: var(--white);
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
   }
 
   p {
@@ -20,6 +38,12 @@
     font-size: 1.125rem;
     color: var(--gray-100);
     line-height: 1.375rem;
+
+    overflow: hidden; /* remove o estouro do elemento */
+    text-overflow: ellipsis; /* adiciona “...” no final */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* quantidade de linhas */
+    -webkit-box-orient: vertical;
   }
 
   > div {
@@ -40,7 +64,27 @@
         color: var(--blue-500);
       }
     }
-  } 
+  }
+
+  &:hover {
+    transition: 0.2s;
+    filter: brightness(1.1);
+    h2 {
+      transition: 0.4s;
+      color: var(--blue-800);
+    }
+    p{
+      color: var(--white);
+    }
+
+    .floating {
+      -webkit-transform: translateY(-4px);
+      -moz-transform: translateY(-4px);
+      -ms-transform: translateY(-4px);
+      -o-transform: translateY(-4px);
+      transform: translateY(-4px);
+    }
+  }
 }
 
 .tooltip {

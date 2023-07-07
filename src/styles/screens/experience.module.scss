@@ -48,10 +48,12 @@
     }
 
     img {
-      height: 260px;
-      width: 400px;
+      max-height: 260px;
+      max-width: 400px;
+      width: 100%;
       object-fit: contain;
       border-radius: 20px;
+      align-self: center;
     }
 
     h2 {
@@ -68,5 +70,18 @@
       font-size: 1.125rem;
       color: var(--white);
     }
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    > h1 {
+      font-size: 2.4rem;
+    }
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
   }
 }

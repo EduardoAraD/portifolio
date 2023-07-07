@@ -88,6 +88,37 @@
   }
 }
 
+.contactOut {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  p {
+    font-size: 1.75rem;
+    line-height: 4.5rem;
+    font-weight: 700;
+    color: var(--gray-100);
+    text-align: center;
+  }
+
+  > div {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      color: var(--white);
+      transition: color 0.2s;
+
+      &:hover {
+        color: var(--blue-500);
+      }
+    }
+  }
+}
+
 .resume {
   margin-top: 4rem;
 
@@ -147,5 +178,29 @@
       line-height: 1.8rem;
       font-size: 1.125rem;
     }
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    > h1 {
+      font-size: 2.4rem;
+    }
+  }
+  .biografy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .contact {
+      > p, div:not(.border) {
+        height: 0px;
+        visibility: hidden;
+      }
+    }
+  }
+
+  .contactOut {
+    visibility: visible;
   }
 }

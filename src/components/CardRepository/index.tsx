@@ -26,9 +26,10 @@ type Props = {
   name: string;
   content: string;
   iconTecnologies: IconTecnology[];
+  linkGitHub: string;
 }
 
-export function CardRepository({ content, iconTecnologies, name}: Props) {
+export function CardRepository({ content, iconTecnologies, name, linkGitHub }: Props) {
 
   function renderIcon(icon: IconTecnology) {
     switch(icon) {
@@ -58,8 +59,8 @@ export function CardRepository({ content, iconTecnologies, name}: Props) {
   }
 
   return (
-    <div className={styles.card}>
-      <h2>{name}</h2>
+    <a href={linkGitHub} target='_blank' className={styles.card}>
+      <h2 className={styles.floating}>{name}</h2>
       <p>{content}</p>
       <div>
       {iconTecnologies.map(item => (
@@ -69,6 +70,6 @@ export function CardRepository({ content, iconTecnologies, name}: Props) {
         </div>
       ))}
       </div>
-    </div>
+    </a>
   )
 }

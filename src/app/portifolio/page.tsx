@@ -16,7 +16,13 @@ export default function Portifolio() {
   }, []);
 
   const rspositoriesFilter = useMemo(() => {
-    return repositories.filter(item => item.name.toLocaleLowerCase().includes(filter.toLocaleLowerCase()));
+    return repositories.filter(item => 
+        item.name.toLocaleLowerCase().includes(filter.toLocaleLowerCase()
+      ) ||
+      item.tecnologies.filter(tec =>
+        tec.toLocaleLowerCase().includes(filter.toLocaleLowerCase()
+      )).length > 0
+    );
   }, [filter]);
 
   return (
@@ -36,6 +42,7 @@ export default function Portifolio() {
             content={item.description}
             iconTecnologies={item.tecnologies}
             name={item.name}
+            linkGitHub={item.linkGitHub}
           />
         ))}
       </div>

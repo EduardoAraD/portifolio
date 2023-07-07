@@ -31,6 +31,7 @@ export default function Experience() {
       <div className={styles.section}>
         <h1>Experiência Profissional</h1>
         <div className={styles.info}>
+          <Image src={servnacImg} alt='Grupo Servnac' />
           <div>
             <h2>Desenvolvedor Front-End Junior|Pleno</h2>
             <div>
@@ -44,7 +45,6 @@ export default function Experience() {
               em sites e aplicativos no <b>AWS, Google Play e Apple Store</b>.
             </p>
           </div>
-          <Image src={servnacImg} alt='Grupo Servnac' />
         </div>
         <div className={styles.projects}>
           <h3>Principais Projetos</h3>

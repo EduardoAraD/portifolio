@@ -33,7 +33,7 @@ export default function Home() {
         <div className={styles.info}>
           <h3>Biografia</h3>
           <p>
-          Sou de Caucaia, trabalho com entusiasmo para criar soluções criativas e impactantes. Ao longo dos anos, aprimorei
+          Sou de Caucaia-CE, trabalho com entusiasmo para criar soluções criativas e impactantes. Ao longo dos anos, aprimorei
           meus conhecimentos em <span>Desenvolvimento Front End</span> e desenvolvi um profundo conhecimento no <span>Desenvolvimento
           Mobile com React Native e Expo</span>. Com um olhar atento aos detalhes e uma abordagem centrada no usuário,
           procuro criar experiências únicas e cativantes que atendam às necessidades e desejos dos usuários.
@@ -52,27 +52,27 @@ export default function Home() {
           de trabalharmos juntos.
           </p>
           <p>
-          Vamos construir algo incrível juntos! Entre em contato comigo clicando nos ícones ao lado.
+          Vamos construir algo incrível juntos! Entre em contato comigo clicando nos ícones das redes sociais.
           </p>
           <p>
-          Muito obrigado(a) pela visita ao meu portfólio. Estou ansioso(a) para conhecer você e discutir
+          Muito obrigado(a) pela visita ao meu portifólio. Estou ansioso(a) para conhecer você e discutir
           como podemos alcançar grandes conquistas juntos!
           </p>
         </div>
-        {/* <div className={styles.contact}>
-          <p>Redes Sociais</p>
-          <div>
-            <a href={"https://github.com/EduardoAraD"} target='_blank'>
-              <FiGithub size={20} />
-            </a>
-            <a href={"https://www.instagram.com/duduh_arad/"} target='_blank'>
-              <FiInstagram size={20} />
-            </a>
-            <a href={"https://www.linkedin.com/in/eduardo-araujo-2a679a176/"} target='_blank'>
-              <FiLinkedin size={20} />
-            </a>
-          </div>
-        </div> */}
+      </div>
+      <div className={styles.contactOut}>
+        <p>Redes Sociais</p>
+        <div>
+          <a href={"https://github.com/EduardoAraD"} target='_blank'>
+            <FiGithub size={20} />
+          </a>
+          <a href={"https://www.instagram.com/duduh_arad/"} target='_blank'>
+            <FiInstagram size={20} />
+          </a>
+          <a href={"https://www.linkedin.com/in/eduardo-araujo-2a679a176/"} target='_blank'>
+            <FiLinkedin size={20} />
+          </a>
+        </div>
       </div>
 {/* 
       <div className={styles.resume}>

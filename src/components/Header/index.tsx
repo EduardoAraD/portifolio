@@ -1,4 +1,5 @@
 import Link from 'next/link';
+
 import styles from './styles.module.scss';
 
 export function Header () {
@@ -13,7 +14,7 @@ export function Header () {
           <a>Experiência</a>
         </Link>
         <Link href="/portifolio" legacyBehavior >
-          <a>Portifólio</a>
+          <a>Portifólios</a>
         </Link>
       </div>
     </div>

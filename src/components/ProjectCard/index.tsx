@@ -1,8 +1,10 @@
+import { useCallback } from 'react';
 import { FaReact, FaApple } from 'react-icons/fa';
 import { DiAndroid } from 'react-icons/di';
+
 import { IconLink } from '@/models/project';
+
 import styles from './styles.module.scss';
-import { useCallback } from 'react';
 
 type Props = {
   name: string;

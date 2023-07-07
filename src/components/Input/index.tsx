@@ -12,7 +12,7 @@ export const Input = ({onClickSearch, ...rest}: Props) => {
     <div className={styles.container}>
       <input
         type="text"
-        placeholder="Procure repositórios por name ou tecnologias"
+        placeholder="Procure por name ou tecnologias"
         {...rest}
       />
       <button onClick={onClickSearch}>
