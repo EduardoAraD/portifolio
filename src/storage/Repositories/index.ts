@@ -1,4 +1,4 @@
-import { Repository } from "@/models/repository";
+import { Repository } from "../../models/repository";
 
 export const repositories: Repository[] = [
   {

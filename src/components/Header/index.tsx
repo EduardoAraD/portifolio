@@ -7,15 +7,9 @@ export function Header () {
     <div className={styles.header}>
       <h3>Eduardo Araújo</h3>
       <div>
-        <Link href="/" legacyBehavior >
-          <a>Home</a>
-        </Link>
-        <Link href="/experiencia" legacyBehavior >
-          <a>Experiência</a>
-        </Link>
-        <Link href="/portifolio" legacyBehavior >
-          <a>Portifólios</a>
-        </Link>
+        <Link href="/">Home</Link>
+        <Link href="/experiencia">Experiência</Link>
+        <Link href="/portifolio">Portifólios</Link>
       </div>
     </div>
   )

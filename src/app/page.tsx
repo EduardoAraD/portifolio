@@ -19,13 +19,22 @@ export default function Home() {
           </div>
           <p>Redes Sociais</p>
           <div>
-            <a href={"https://github.com/EduardoAraD"} target='_blank'>
+            <a
+              data-testid='iconGitHub'
+              href={"https://github.com/EduardoAraD"}
+              target='_blank'>
               <FiGithub size={20} />
             </a>
-            <a href={"https://www.instagram.com/duduh_arad/"} target='_blank'>
+            <a
+              data-testid='iconInstagram'
+              href={"https://www.instagram.com/duduh_arad/"}
+              target='_blank'>
               <FiInstagram size={20} />
             </a>
-            <a href={"https://www.linkedin.com/in/eduardo-araujo-2a679a176/"} target='_blank'>
+            <a
+              data-testid='iconLinkedin'
+              href={"https://www.linkedin.com/in/eduardo-araujo-2a679a176/"}
+              target='_blank'>
               <FiLinkedin size={20} />
             </a>
           </div>

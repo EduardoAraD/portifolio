@@ -7,6 +7,6 @@ describe('Header components', () => {
 
     expect(screen.getByText('Home')).toBeInTheDocument()
     expect(screen.getByText('Experiência')).toBeInTheDocument()
-    expect(screen.getByText('Portifólio')).toBeInTheDocument()
+    expect(screen.getByText('Portifólios')).toBeInTheDocument()
   })
 })

@@ -1,11 +1,12 @@
 import Image from 'next/image';
 
-import { ProjectCard } from '@/components/ProjectCard';
-import { projects } from '@/storage/Projects';
+import { ProjectCard } from '../../components/ProjectCard';
+
+import { projects } from '../../storage/Projects';
 
 import styles from '../../styles/screens/experience.module.scss';
-import ufcImage from '../../assets/ufc.jpeg';
-import servnacImg from '../../assets/servnac.jpeg';
+import ufcImage from '../../../public/ufc.jpeg';
+import servnacImg from '../../../public/servnac.jpeg';
 
 export default function Experience() {
   return (
@@ -13,7 +14,7 @@ export default function Experience() {
       <div className={styles.section}>
         <h1>Formação</h1>
         <div className={styles.info}>
-          <Image src={ufcImage} alt='UFC Russas' quality={80} />
+          <Image src='/ufc.jpeg' alt='UFC Russas' quality={80} width={400} height={260} />
           <div>
             <h2>Engenharia de Software</h2>
             <div>
@@ -31,7 +32,7 @@ export default function Experience() {
       <div className={styles.section}>
         <h1>Experiência Profissional</h1>
         <div className={styles.info}>
-          <Image src={servnacImg} alt='Grupo Servnac' />
+          <Image src="/servnac.jpeg" alt='Grupo Servnac' width={400} height={260} />
           <div>
             <h2>Desenvolvedor Front-End Junior|Pleno</h2>
             <div>
@@ -51,6 +52,7 @@ export default function Experience() {
           {projects.map(project => (
             <ProjectCard
               key={project.name}
+              data-testid={project.name}
               content={project.content}
               links={project.links}
               name={project.name}

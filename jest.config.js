@@ -5,7 +5,8 @@ module.exports = {
     "<rootDir>/src/tests/setupTests.ts"
   ],
   transform: {
-    "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest"
+    "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
+    '\\.(jpeg|png|svg)$': '<rootDir>/fileTransformer.js',
   },
   testEnvironment: 'jsdom',
   moduleNameMapper: {

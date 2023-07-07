@@ -1,42 +1,49 @@
 'use client'
-import { useCallback, useState, ChangeEvent, useMemo } from 'react';
+import { useCallback, useState, ChangeEvent, useMemo, useEffect } from 'react';
 
-import { Input } from '@/components/Input';
-import { CardRepository } from '@/components/CardRepository';
+import { Input } from '../../components/Input';
+import { CardRepository } from '../../components/CardRepository';
 
-import { repositories } from '@/storage/Repositories';
+import { Repository } from '../../models/repository';
+
+import { repositories as repositoriesStorage } from '../../storage/Repositories';
 
 import styles from '../../styles/screens/portifolio.module.scss';
 
 export default function Portifolio() {
   const [filter, setFilter] = useState('');
+  const [repositories, setRepositories] = useState<Repository[]>([]);
 
   const onChangeTextFilter = useCallback((event: ChangeEvent<HTMLInputElement>) => {
     setFilter(event.target.value);
   }, []);
 
-  const rspositoriesFilter = useMemo(() => {
-    return repositories.filter(item => 
-        item.name.toLocaleLowerCase().includes(filter.toLocaleLowerCase()
-      ) ||
-      item.tecnologies.filter(tec =>
-        tec.toLocaleLowerCase().includes(filter.toLocaleLowerCase()
-      )).length > 0
-    );
-  }, [filter]);
+  const repositoriesFilter = useMemo(() => {
+    return repositories.filter(item => {
+      if(item.name.toLocaleLowerCase().includes(filter.toLocaleLowerCase())) return true;
+      else {
+        return item.tecnologies.find(tec =>
+          tec.toLocaleLowerCase().includes(filter.toLocaleLowerCase())
+        )
+      }
+    });
+  }, [filter, repositories]);
+
+  useEffect(() => {
+    setRepositories(repositoriesStorage);
+  }, []);
 
   return (
     <div className={styles.container}>
       <h1>Repositórios</h1>
-      <span>Procure pelos repositorios pelo nome ou bibliotecas</span>
+      <span>Procure pelos repositórios pelo nome ou bibliotecas</span>
       <Input
         value={filter}
         onChange={onChangeTextFilter}
-        onClickSearch={() => {}}
       />
 
       <div className={styles.list}>
-        {rspositoriesFilter.map(item => (
+        {repositoriesFilter.map(item => (
           <CardRepository
             key={item.name}
             content={item.description}

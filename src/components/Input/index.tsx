@@ -3,21 +3,18 @@ import { FiSearch } from 'react-icons/fi';
 
 import styles from './styles.module.scss';
 
-type Props = InputHTMLAttributes<HTMLInputElement> & {
-  onClickSearch: () => void;
-}
-
-export const Input = ({onClickSearch, ...rest}: Props) => {
+export const Input = ({...rest}: InputHTMLAttributes<HTMLInputElement>) => {
   return (
     <div className={styles.container}>
       <input
         type="text"
+        data-testid='input'
         placeholder="Procure por name ou tecnologias"
         {...rest}
       />
-      <button onClick={onClickSearch}>
+      <div>
         <FiSearch size={27} />
-      </button>
+      </div>
     </div>
   )
 }
