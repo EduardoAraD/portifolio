@@ -38,6 +38,7 @@ export function CardRepository({ content, iconTecnologies, name, linkGitHub }: P
       case 'JavaScript': return <SiJavascript color='#C3C300' />
       case 'Jest': return <SiJest color='#99425b' />
       case 'Maps': return <TbMap2 color='#199900' />
+      case 'Native Base': return <Image src="/iconNativeBase.svg" alt='icon Native Base' height={20} width={20} />
       case 'NextJs': return <TbBrandNextjs color='#131313' />
       case 'Node': return <IoLogoNodejs color='#5FA04E' />
       case 'Prisma': return <SiPrisma color='#183e53' />

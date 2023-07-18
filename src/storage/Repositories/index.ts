@@ -14,6 +14,12 @@ export const repositories: Repository[] = [
     linkGitHub: 'https://github.com/EduardoAraD/portifolio',
   },
   {
+    name: 'Ignite Gym',
+    description: 'Ignite Gym é um aplicativo de treino para academia.',
+    tecnologies: ['Expo', 'Native Base', 'TypeScript'],
+    linkGitHub: 'https://github.com/EduardoAraD/ignite-gym',
+  },
+  {
     name: 'Daily Diet',
     description: 'Daily Diet é uma aplicação mobile para controle da sua dieta',
     tecnologies: ['Expo', "Styled-Component", 'TypeScript'],
