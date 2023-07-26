@@ -14,6 +14,12 @@ export const repositories: Repository[] = [
     linkGitHub: 'https://github.com/EduardoAraD/portifolio',
   },
   {
+    name: 'MarketSpace',
+    description: 'MarketSpace é uma aplicação mobile de compra e venda de produtos novos ou usados.',
+    tecnologies: ['Expo', 'Native Base', 'TypeScript'],
+    linkGitHub: 'https://github.com/EduardoAraD/marketspace',
+  },
+  {
     name: 'Ignite Gym',
     description: 'Ignite Gym é um aplicativo de treino para academia.',
     tecnologies: ['Expo', 'Native Base', 'TypeScript'],
