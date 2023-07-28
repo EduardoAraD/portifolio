@@ -51,7 +51,6 @@ export function CardRepository({ content, iconTecnologies, name, linkGitHub }: P
       case 'TailwindCSS': return <SiTailwindcss color='#38bdf8' />
       case 'TypeScript': return <SiTypescript color='#3178c6' />
       case 'Vite': return <Image src="/iconVite.svg" alt='icon Vite' height={16} width={16} />
-      default: return <FaReact color='#0074a6' />
     }
   }
 

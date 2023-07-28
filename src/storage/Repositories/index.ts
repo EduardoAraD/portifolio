@@ -14,6 +14,18 @@ export const repositories: Repository[] = [
     linkGitHub: 'https://github.com/EduardoAraD/portifolio',
   },
   {
+    name: 'Iweather',
+    description: 'Iweather é uma aplicação que mostra informações do tempo de uma cidade.',
+    tecnologies: ['Expo', 'Jest', 'TypeScript'],
+    linkGitHub: 'https://github.com/EduardoAraD/iweather',
+  },
+  {
+    name: 'MarketSpace',
+    description: 'MarketSpace é uma aplicação mobile de compra e venda de produtos novos ou usados.',
+    tecnologies: ['Expo', 'Native Base', 'TypeScript'],
+    linkGitHub: 'https://github.com/EduardoAraD/marketspace',
+  },
+  {
     name: 'Ignite Gym',
     description: 'Ignite Gym é um aplicativo de treino para academia.',
     tecnologies: ['Expo', 'Native Base', 'TypeScript'],

@@ -6,7 +6,7 @@ describe('CardRepository component', () => {
     render(
       <CardRepository
         content="Exemple Content"
-        iconTecnologies={['Expo']}
+        iconTecnologies={['Expo', 'Flutter', 'HTML', 'JavaScript']}
         linkGitHub="https://github.com/EduardoAraD"
         name="Exemple Name"
       />
