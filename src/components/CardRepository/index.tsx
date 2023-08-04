@@ -29,6 +29,7 @@ export function CardRepository({ content, iconTecnologies, name, linkGitHub }: P
 
   function renderIcon(icon: IconTecnology) {
     switch(icon) {
+      case 'Animated': return <Image src="/iconSkia.png" alt='icon Animated Skia' height={20} width={20} />
       case 'CSS': return <IoLogoCss3 color='#4b60cb' />
       case 'Expo': return <SiExpo color='#131313' />
       case 'Fastify': return <SiFastify color='#131313' />

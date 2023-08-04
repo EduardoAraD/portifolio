@@ -14,6 +14,12 @@ export const repositories: Repository[] = [
     linkGitHub: 'https://github.com/EduardoAraD/portifolio',
   },
   {
+    name: 'IgniteQuiz',
+    description: 'Ignite Quiz é um aplicativo de perguntas sobre programação. Animação, Feedback visual, tatil e sonoro.',
+    tecnologies: ['Expo', 'TypeScript', 'Animated'],
+    linkGitHub: 'https://github.com/EduardoAraD/iweather',
+  },
+  {
     name: 'Iweather',
     description: 'Iweather é uma aplicação que mostra informações do tempo de uma cidade.',
     tecnologies: ['Expo', 'Jest', 'TypeScript'],
