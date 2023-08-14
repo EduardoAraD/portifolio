@@ -14,10 +14,16 @@ export const repositories: Repository[] = [
     linkGitHub: 'https://github.com/EduardoAraD/portifolio',
   },
   {
-    name: 'IgniteQuiz',
+    name: 'Coffee Delivery',
+    description: 'Coffee Delivery é um aplicativo mobile para compras de café.',
+    tecnologies: ['Expo', 'TypeScript', 'Styled-Component', 'Animated'],
+    linkGitHub: 'https://github.com/EduardoAraD/coffee-devilary',
+  },
+  {
+    name: 'Ignite Quiz',
     description: 'Ignite Quiz é um aplicativo de perguntas sobre programação. Animação, Feedback visual, tatil e sonoro.',
     tecnologies: ['Expo', 'TypeScript', 'Animated'],
-    linkGitHub: 'https://github.com/EduardoAraD/iweather',
+    linkGitHub: 'https://github.com/EduardoAraD/ignite-quiz',
   },
   {
     name: 'Iweather',
