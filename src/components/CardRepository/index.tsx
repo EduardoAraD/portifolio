@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { FaReact, FaHtml5, FaSass, FaCcStripe } from 'react-icons/fa';
+import { FaReact, FaHtml5, FaSass, FaCcStripe,  } from 'react-icons/fa';
 import {
   SiFauna,
   SiJest,
@@ -9,10 +9,11 @@ import {
   SiFastify,
   SiPrisma,
   SiPrismic,
-  SiJavascript
+  SiJavascript,
+  SiRealm
 } from 'react-icons/si';
 import { IoLogoCss3, IoLogoNodejs } from 'react-icons/io';
-import { TbBrandNextjs, TbMap2, TbBrandReactNative } from 'react-icons/tb';
+import { TbBrandNextjs, TbMap2, TbBrandReactNative, TbWifiOff } from 'react-icons/tb';
 
 import { IconTecnology } from '../../models/repository';
 
@@ -44,8 +45,10 @@ export function CardRepository({ content, iconTecnologies, name, linkGitHub }: P
       case 'Node': return <IoLogoNodejs color='#5FA04E' />
       case 'Prisma': return <SiPrisma color='#183e53' />
       case 'Prismic': return <SiPrismic color='#131313' />
+      case 'Offline-First': return <TbWifiOff color='#0074a6' />
       case 'React JS': return <FaReact color='#0074a6' />
       case 'React Native': return <TbBrandReactNative color=' #61dafb' />
+      case 'RealmDB': return <SiRealm color='#6E60F9' />
       case 'SASS': return <FaSass color='#CF649A' />
       case 'Stripe': return <FaCcStripe color='#635bff' />
       case 'Styled-Component': return <Image src="/iconStyled.png" alt='icon Styled components' height={20} width={20} />
