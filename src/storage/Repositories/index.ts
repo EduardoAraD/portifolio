@@ -14,6 +14,12 @@ export const repositories: Repository[] = [
     linkGitHub: 'https://github.com/EduardoAraD/portifolio',
   },
   {
+    name: 'NLW Expert',
+    description: 'NLW Expert é um aplicativos de pedidos para entrega.',
+    tecnologies: ['Expo', 'TypeScript', 'TailwindCSS'],
+    linkGitHub: 'https://github.com/EduardoAraD/nlw_expert',
+  },
+  {
     name: 'Ignite Fleet',
     description: 'Ignite Fleet é um aplicativo de monitorar rotas de carros registrados pelos usuários.',
     tecnologies: ['Expo', 'Maps', 'Offline-First', 'RealmDB', 'TypeScript', 'Styled-Component'],
